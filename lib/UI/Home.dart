@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -110,16 +111,59 @@ class _HomeState extends State<Home>{
       body: new Container(
         padding: EdgeInsets.all(33.0),
         child: new Center(
-          child: new Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              new Text("$myvalue"),
-              new FlatButton(onPressed:_neverSatisfied, child: new Text("Click me notification Alert")),
-              new FlatButton(onPressed:ShowBottomSheet, child: new Text("Click me Show Bottom Sheet")),
-              new FlatButton(onPressed:ShowSimpleDialog, child: new Text("Click me Show simple dialog")),
-              new RaisedButton(onPressed: showSnackBar, child: new Text('showSnackBar')),
-            ],
-          )
+            child: new Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  new Card(
+                    color: Colors.white10,
+                    child: new Container(
+                      padding: EdgeInsets.all(20),
+                      child: new Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          new Text("$myvalue"),
+                          new FlatButton(onPressed:_neverSatisfied, child: new Text("Click me notification Alert")),
+                          new FlatButton(onPressed:ShowBottomSheet, child: new Text("Click me Show Bottom Sheet")),
+                          new FlatButton(onPressed:ShowSimpleDialog, child: new Text("Click me Show simple dialog")),
+                          new RaisedButton(onPressed: showSnackBar, child: new Text('showSnackBar')),
+                        ],
+                      ),
+                    ),
+                  ),
+                  new Card(
+                    color: Colors.indigoAccent,
+                    child: new Container(
+                      padding: EdgeInsets.all(20),
+                      child: new Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          new Text("$myvalue"),
+                          new FlatButton(onPressed:_neverSatisfied, child: new Text("Click me notification Alert")),
+                          new FlatButton(onPressed:ShowBottomSheet, child: new Text("Click me Show Bottom Sheet")),
+                          new FlatButton(onPressed:ShowSimpleDialog, child: new Text("Click me Show simple dialog")),
+                          new RaisedButton(onPressed: showSnackBar, child: new Text('showSnackBar')),
+                        ],
+                      ),
+                    ),
+                  ),
+                  new Card(
+                    color: Colors.pinkAccent,
+                    child: new Container(
+                      padding: EdgeInsets.all(20),
+                      child: new Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          new Text("$myvalue"),
+                          new FlatButton(onPressed:_neverSatisfied, child: new Text("Click me notification Alert")),
+                          new FlatButton(onPressed:ShowBottomSheet, child: new Text("Click me Show Bottom Sheet")),
+                          new FlatButton(onPressed:ShowSimpleDialog, child: new Text("Click me Show simple dialog")),
+                          new RaisedButton(onPressed: showSnackBar, child: new Text('showSnackBar')),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              )
         ),
       ),
     );
